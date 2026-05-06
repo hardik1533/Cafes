@@ -4,12 +4,12 @@ import { FaInstagram as Instagram } from 'react-icons/fa';
 
 const Gallery = () => {
   const images = [
-    "https://images.unsplash.com/photo-1497935586351-b67a49e012bf?w=600&q=80",
-    "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=600&q=80",
-    "https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=600&q=80",
-    "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=80",
-    "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=600&q=80",
-    "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?w=600&q=80",
+    "https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    "https://images.unsplash.com/photo-1511920170033-f8396924c348?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    "https://images.unsplash.com/photo-1445116572660-236099ec97a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    "https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    "https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
   ];
 
   return (
@@ -56,7 +56,7 @@ const Gallery = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
-              className={`relative overflow-hidden rounded-2xl group ${index === 0 || index === 3 ? 'md:col-span-2 md:row-span-2' : ''}`}
+              className={`relative overflow-hidden rounded-2xl group`}
             >
               <div className="aspect-square w-full h-full">
                 <img 

@@ -24,9 +24,9 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'glass py-4' : 'bg-transparent py-6'}`}>
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-dark-900/95 shadow-lg backdrop-blur-md py-4' : 'bg-transparent py-6'}`}>
       <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
-        <a href="#home" className="flex items-center gap-2 text-xl sm:text-2xl font-serif font-bold text-white group">
+        <a href="#home" className="flex items-center gap-2 text-2xl sm:text-3xl font-serif font-bold text-white group">
           <Coffee className="text-coffee-500 group-hover:rotate-12 transition-transform duration-300" />
           <span>Talkhouse Caffe</span>
         </a>
@@ -61,7 +61,7 @@ const Navbar = () => {
                 key={link.name} 
                 href={link.href} 
                 onClick={() => setIsOpen(false)}
-                className="text-gray-300 hover:text-coffee-400 font-poppins text-lg"
+                className="text-gray-300 hover:text-coffee-400 font-poppins text-2xl py-2"
               >
                 {link.name}
               </a>

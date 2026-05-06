@@ -5,10 +5,10 @@ import { FaInstagram as InstaIcon } from 'react-icons/fa';
 
 const Instagram = () => {
   const posts = [
-    { img: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=500&q=80", likes: "1.2k", comments: "45" },
-    { img: "https://images.unsplash.com/photo-1495474472201-4a338c20202d?w=500&q=80", likes: "890", comments: "32" },
-    { img: "https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=500&q=80", likes: "2.1k", comments: "108" },
-    { img: "https://images.unsplash.com/photo-1507133750070-4ed25c7e1db0?w=500&q=80", likes: "1.5k", comments: "67" },
+    { img: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", likes: "1.2k", comments: "45" },
+    { img: "https://images.unsplash.com/photo-1495474472201-4a338c20202d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", likes: "890", comments: "32" },
+    { img: "https://images.unsplash.com/photo-1442512595331-e89e73853f31?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", likes: "2.1k", comments: "108" },
+    { img: "https://images.unsplash.com/photo-1507133750070-4ed25c7e1db0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", likes: "1.5k", comments: "67" },
   ];
 
   return (

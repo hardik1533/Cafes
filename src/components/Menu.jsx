@@ -1,16 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Plus } from 'lucide-react';
 
 const Menu = () => {
+  const [showAll, setShowAll] = useState(false);
+
   const menuItems = [
-    { name: "Cappuccino", desc: "Espresso with steamed milk and a deep layer of foam.", price: "₹180", img: "https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=500&q=80", bestSeller: true },
-    { name: "Masala Tea", desc: "Authentic Indian spiced tea brewed to perfection.", price: "₹90", img: "https://images.unsplash.com/photo-1561336313-0bd5e0b27ec8?w=500&q=80" },
-    { name: "Gourmet Burger", desc: "Juicy patty with fresh veggies and signature sauce.", price: "₹250", img: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&q=80", bestSeller: true },
-    { name: "Blue Lagoon", desc: "Refreshing mocktail with a hint of citrus and mint.", price: "₹150", img: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500&q=80" },
-    { name: "Cheese Pizza", desc: "Classic mozzarella cheese and tangy tomato sauce.", price: "₹350", img: "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500&q=80" },
-    { name: "Chocolate Lava Cake", desc: "Warm gooey chocolate center served with vanilla ice cream.", price: "₹220", img: "https://images.unsplash.com/photo-1624353365286-3f8d62daad51?w=500&q=80", bestSeller: true },
+    { name: "Cappuccino", desc: "Espresso with steamed milk and a deep layer of foam.", price: "₹180", img: "https://images.unsplash.com/photo-1572442388796-11668a67e53d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", bestSeller: true },
+    { name: "Masala Tea", desc: "Authentic Indian spiced tea brewed to perfection.", price: "₹90", img: "https://images.unsplash.com/photo-1561336313-0bd5e0b27ec8?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
+    { name: "Gourmet Burger", desc: "Juicy patty with fresh veggies and signature sauce.", price: "₹250", img: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", bestSeller: true },
+    { name: "Blue Lagoon", desc: "Refreshing mocktail with a hint of citrus and mint.", price: "₹150", img: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
+    { name: "Cheese Pizza", desc: "Classic mozzarella cheese and tangy tomato sauce.", price: "₹350", img: "https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
+    { name: "Chocolate Lava Cake", desc: "Warm gooey chocolate center served with vanilla ice cream.", price: "₹220", img: "https://images.unsplash.com/photo-1624353365286-3f8d62daad51?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", bestSeller: true },
   ];
+
+  const extraItems = [
+    { name: "Classic Latte", desc: "Rich espresso combined with milk and a light layer of foam.", price: "₹160", img: "https://images.unsplash.com/photo-1551030173-122aabc4489c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
+    { name: "Green Tea", desc: "Healthy and refreshing antioxidant-rich tea.", price: "₹80", img: "https://images.unsplash.com/photo-1627492221081-3006a2b8eec1?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
+    { name: "Cheesecake", desc: "Classic New York style creamy cheesecake.", price: "₹200", img: "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
+  ];
+
+  const displayedItems = showAll ? [...menuItems, ...extraItems] : menuItems;
 
   return (
     <section id="menu" className="py-24 bg-dark-800 relative">
@@ -36,7 +46,7 @@ const Menu = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {menuItems.map((item, index) => (
+          {displayedItems.map((item, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 30 }}
@@ -81,8 +91,11 @@ const Menu = () => {
           viewport={{ once: true }}
           className="mt-16 text-center"
         >
-          <button className="border border-coffee-500 text-coffee-400 hover:bg-coffee-500 hover:text-white px-8 py-3 rounded-full font-poppins transition-all duration-300">
-            View Full Menu
+          <button 
+            onClick={() => setShowAll(!showAll)}
+            className="border border-coffee-500 text-coffee-400 hover:bg-coffee-500 hover:text-white px-8 py-3 rounded-full font-poppins transition-all duration-300"
+          >
+            {showAll ? "Show Less" : "View Full Menu"}
           </button>
         </motion.div>
       </div>
