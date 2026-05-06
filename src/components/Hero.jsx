@@ -24,7 +24,7 @@ const Hero = () => {
           <span className="text-coffee-400 font-poppins tracking-[0.2em] uppercase text-sm font-semibold mb-4 block">
             Welcome to
           </span>
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-white mb-6 leading-tight">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-white mb-6 leading-tight">
             Talk. Relax. <span className="text-gradient">Enjoy.</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-300 font-sans max-w-2xl mx-auto mb-10">
@@ -38,14 +38,14 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="flex flex-col sm:flex-row gap-4"
         >
-          <a href="#menu" className="bg-coffee-600 hover:bg-coffee-500 text-white font-poppins font-medium px-8 py-4 rounded-full flex items-center justify-center gap-2 transition-all duration-300 hover:shadow-[0_0_20px_rgba(200,155,109,0.4)] group">
+          <a href="#menu" className="bg-coffee-600 hover:bg-coffee-500 text-white font-poppins font-medium px-6 sm:px-8 py-4 rounded-full flex items-center justify-center gap-2 transition-all duration-300 hover:shadow-[0_0_20px_rgba(200,155,109,0.4)] group w-full sm:w-auto">
             View Menu
             <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
           </a>
-          <a href="#contact" className="glass hover:bg-white/10 text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300">
+          <a href="#contact" className="glass hover:bg-white/10 text-white font-poppins font-medium px-6 sm:px-8 py-4 rounded-full transition-all duration-300 w-full sm:w-auto">
             Reserve Table
           </a>
-          <a href="#contact" className="border border-[#25D366] text-[#25D366] hover:bg-[#25D366] hover:text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300">
+          <a href="#contact" className="border border-[#25D366] text-[#25D366] hover:bg-[#25D366] hover:text-white font-poppins font-medium px-6 sm:px-8 py-4 rounded-full transition-all duration-300 w-full sm:w-auto flex items-center justify-center">
             WhatsApp
           </a>
         </motion.div>

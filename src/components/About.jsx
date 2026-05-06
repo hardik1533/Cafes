@@ -27,7 +27,7 @@ const About = () => {
               <img 
                 src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
                 alt="Coffee Pouring" 
-                className="w-full h-[500px] object-cover hover:scale-105 transition-transform duration-700"
+                className="w-full h-64 sm:h-80 lg:h-[500px] object-cover hover:scale-105 transition-transform duration-700"
               />
             </div>
             {/* Decorative element */}
@@ -35,9 +35,9 @@ const About = () => {
             <div className="absolute -top-10 -right-10 w-64 h-64 bg-coffee-600/10 rounded-full blur-3xl z-0"></div>
             
             {/* Floating Badge */}
-            <div className="glass-card absolute -bottom-6 -right-6 p-6 rounded-xl z-20 flex items-center gap-4">
-              <h3 className="text-4xl font-serif text-coffee-400">10+</h3>
-              <p className="text-sm text-gray-300 font-poppins leading-tight">Years of <br/> Excellence</p>
+            <div className="glass-card absolute bottom-0 right-0 sm:-bottom-6 sm:-right-6 p-4 sm:p-6 rounded-xl z-20 flex items-center gap-3 sm:gap-4 scale-90 sm:scale-100 origin-bottom-right">
+              <h3 className="text-3xl sm:text-4xl font-serif text-coffee-400">10+</h3>
+              <p className="text-xs sm:text-sm text-gray-300 font-poppins leading-tight">Years of <br/> Excellence</p>
             </div>
           </motion.div>
 

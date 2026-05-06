@@ -54,7 +54,7 @@ const Contact = () => {
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="w-full lg:w-2/3 h-[500px] rounded-3xl overflow-hidden glass p-2"
+            className="w-full lg:w-2/3 h-80 sm:h-[400px] lg:h-[500px] rounded-3xl overflow-hidden glass p-2"
           >
             <iframe 
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.077651034262!2d70.76100917529322!3d22.312933079676766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959c90b62e49c71%3A0xc3af7d5494d1f2a3!2sTalkhouse%20Caffe!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 

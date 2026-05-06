@@ -46,8 +46,8 @@ const Reviews = () => {
         </div>
 
         <div className="max-w-4xl mx-auto relative">
-          <div className="glass rounded-3xl p-8 md:p-12 text-center relative">
-            <Quote className="absolute top-6 left-6 text-coffee-500/20 w-16 h-16" />
+          <div className="glass rounded-3xl p-6 sm:p-8 md:p-12 text-center relative">
+            <Quote className="absolute top-4 left-4 sm:top-6 sm:left-6 text-coffee-500/20 w-12 h-12 sm:w-16 sm:h-16" />
             
             <AnimatePresence mode="wait">
               <motion.div
@@ -63,7 +63,7 @@ const Reviews = () => {
                     <Star key={i} className="text-coffee-400 fill-coffee-400" size={20} />
                   ))}
                 </div>
-                <p className="text-xl md:text-2xl font-serif text-white mb-8 leading-relaxed italic">
+                <p className="text-lg sm:text-xl md:text-2xl font-serif text-white mb-8 leading-relaxed italic">
                   "{reviews[currentIndex].text}"
                 </p>
                 <div>
