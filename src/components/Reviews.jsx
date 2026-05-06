@@ -4,9 +4,9 @@ import { Star, Quote, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const Reviews = () => {
   const reviews = [
-    { name: "Rahul Patel", role: "Coffee Enthusiast", text: "One of the best cafes in Rajkot with amazing ambiance and coffee.", rating: 5 },
-    { name: "Sneha Desai", role: "Local Guide", text: "Perfect place for chilling with friends at night.", rating: 5 },
-    { name: "Karan Mehta", role: "Food Blogger", text: "Food quality and interior both are top-class.", rating: 5 },
+    { name: "Ananya Patel", role: "Local Guide", text: "Amazing rooftop vibe and live music! The Cheese Balls are a must-try. Perfect place for evening hangouts in Chandkheda.", rating: 5 },
+    { name: "Rohan Shah", role: "Event Organizer", text: "Hosted my birthday party here and the decor was beautiful. The pure veg multi-cuisine menu is fantastic.", rating: 5 },
+    { name: "Priya Desai", role: "Food Blogger", text: "Best rooftop cafe in Ahmedabad! The Margherita pizza and cold coffee were delicious. Highly recommend.", rating: 5 },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

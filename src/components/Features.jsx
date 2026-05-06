@@ -1,17 +1,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Wifi, Tv, Coffee, Clock, Users, Zap, Sofa, Gamepad2 } from 'lucide-react';
+import { Wifi, Tv, Coffee, Clock, Users, Zap, Sofa, Music } from 'lucide-react';
 
 const Features = () => {
   const features = [
-    { icon: <Coffee size={32} />, title: "Premium Coffee", desc: "Handcrafted beverages for every mood." },
-    { icon: <Sofa size={32} />, title: "Cozy Lounge", desc: "Warm rustic interiors to chill with friends." },
-    { icon: <Wifi size={32} />, title: "Free WiFi", desc: "Stay connected while you enjoy your cafe time." },
-    { icon: <Gamepad2 size={32} />, title: "Board Games", desc: "Fun table games for friends and family." },
+    { icon: <Coffee size={32} />, title: "Premium Menu", desc: "Multi-cuisine vegetarian delights." },
+    { icon: <Sofa size={32} />, title: "Open-Air Ambiance", desc: "Warm lighting and expansive terrace." },
+    { icon: <Music size={32} />, title: "Live Music", desc: "Soulful performances on the rooftop." },
+    { icon: <Wifi size={32} />, title: "Free WiFi", desc: "Stay connected while you dine." },
     { icon: <Tv size={32} />, title: "Live Sports", desc: "Catch the latest matches live on screen." },
-    { icon: <Clock size={32} />, title: "Late Night Cafe", desc: "Open till 1:00 AM for midnight cravings." },
+    { icon: <Clock size={32} />, title: "Evening Vibe", desc: "Perfect sunset and late-night ambiance." },
     { icon: <Users size={32} />, title: "Family Friendly", desc: "A welcoming atmosphere for everyone." },
-    { icon: <Zap size={32} />, title: "Fast Service", desc: "Quick and polite staff at your service." },
+    { icon: <Zap size={32} />, title: "Event Hosting", desc: "Customizable décor for private parties." },
   ];
 
   const containerVariants = {

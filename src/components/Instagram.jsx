@@ -40,7 +40,7 @@ const Instagram = () => {
             transition={{ delay: 0.1 }}
             className="text-gray-400 font-sans text-lg"
           >
-            @talkhouseindia
+            @venusrooftop_ahmedabad
           </motion.p>
         </div>
 

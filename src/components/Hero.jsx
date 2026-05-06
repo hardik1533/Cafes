@@ -8,8 +8,8 @@ const Hero = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" 
-          alt="Cafe Interior" 
+          src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" 
+          alt="Rooftop Cafe" 
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-dark-900/80 via-dark-900/60 to-dark-900"></div>
@@ -22,13 +22,13 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <span className="text-coffee-400 font-poppins tracking-[0.2em] uppercase text-sm font-semibold mb-4 block">
-            Welcome to
+            Welcome to Venus
           </span>
           <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-white mb-6 leading-tight">
-            Talk. Relax. <span className="text-gradient">Enjoy.</span>
+            Sky-High <span className="text-gradient">Dining.</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-300 font-sans max-w-2xl mx-auto mb-10">
-            Experience premium coffee, delicious food, and unforgettable moments at Talkhouse Caffe.
+            Experience open-air ambiance, multi-cuisine delights, and unforgettable moments at Venus Rooftop Restro & Cafe.
           </p>
         </motion.div>
 

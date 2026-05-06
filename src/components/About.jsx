@@ -1,13 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Coffee, Clock, Award, Star } from 'lucide-react';
+import { Star, Music, Award, Gift } from 'lucide-react';
 
 const About = () => {
   const highlights = [
-    { icon: <Coffee size={24} />, title: "Premium Beans", desc: "Sourced from the best farms globally." },
-    { icon: <Clock size={24} />, title: "Fast Service", desc: "Hot coffee ready in minutes." },
-    { icon: <Award size={24} />, title: "Fresh Bakery", desc: "Baked daily for perfect taste." },
-    { icon: <Star size={24} />, title: "Cozy Environment", desc: "Perfect for work or relaxing." },
+    { icon: <Star size={24} />, title: "Rooftop Vibe", desc: "Scenic views & open-air dining." },
+    { icon: <Music size={24} />, title: "Live Music", desc: "Enjoy soulful tunes under the stars." },
+    { icon: <Award size={24} />, title: "Pure Veg", desc: "Multi-cuisine delights & mocktails." },
+    { icon: <Gift size={24} />, title: "Event Hosting", desc: "Perfect for birthdays & celebrations." },
   ];
 
   return (
@@ -25,8 +25,8 @@ const About = () => {
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl z-10">
               <img 
-                src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-                alt="Coffee Pouring" 
+                src="https://images.unsplash.com/photo-1525610553991-2bede1a236e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                alt="Rooftop Dining" 
                 className="w-full h-64 sm:h-80 lg:h-[500px] object-cover hover:scale-105 transition-transform duration-700"
               />
             </div>
@@ -51,10 +51,10 @@ const About = () => {
           >
             <h4 className="text-coffee-500 font-poppins font-medium tracking-wider mb-2 uppercase text-sm">Our Story</h4>
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
-              A Passion for Perfect <span className="text-gradient">Coffee</span>
+              Ahmedabad's Best <span className="text-gradient">Rooftop Cafe</span>
             </h2>
             <p className="text-gray-400 mb-6 font-sans text-lg leading-relaxed">
-              Talkhouse Caffe is a modern lifestyle cafe in Rajkot designed for coffee lovers, food enthusiasts, and meaningful conversations. From handcrafted beverages to delicious comfort food, every experience is crafted to create cozy moments with friends and family.
+              Venus Rooftop Restro & Cafe is a popular dining destination in Chandkheda, known for its relaxed open-air ambiance and versatile menu. Offering scenic views of the northern Ahmedabad skyline paired with a calm, breezy environment, it is the ideal spot for casual gatherings or special celebrations.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">

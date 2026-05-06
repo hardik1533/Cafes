@@ -6,21 +6,21 @@ const Menu = () => {
   const [showAll, setShowAll] = useState(false);
 
   const menuItems = [
-    { name: "Samosa Chat", desc: "Crispy samosas crushed and topped with chutneys and spices.", price: "₹100", img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", bestSeller: true },
-    { name: "Cheese Loaded French Fries", desc: "Crispy fries smothered in melted cheese and herbs.", price: "₹150", img: "https://images.unsplash.com/photo-1576107232684-1279f390859f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", bestSeller: true },
-    { name: "Supreme Cheese Burger", desc: "Our signature burger loaded with a premium patty and double cheese.", price: "₹170", img: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", bestSeller: true },
-    { name: "Club Sandwich", desc: "Triple layered sandwich packed with veggies and creamy mayo.", price: "₹200", img: "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
-    { name: "Paneer Tandoori Toast", desc: "Spiced tandoori paneer chunks on crispy toasted bread.", price: "₹180", img: "https://images.unsplash.com/photo-1525351484163-7529414344d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
-    { name: "Cheese Loaded Maggi", desc: "Everyone's favorite noodles with an overload of gooey cheese.", price: "₹120", img: "https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", bestSeller: true },
+    { name: "Cheese Balls", desc: "Crispy golden fried cheese balls served with dip.", price: "₹220", img: "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", bestSeller: true },
+    { name: "Margherita Pizza", desc: "Classic pizza with fresh tomato sauce, mozzarella, and basil.", price: "₹300", img: "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", bestSeller: true },
+    { name: "Paneer Tikka", desc: "Soft paneer cubes marinated in spices and grilled in tandoor.", price: "₹280", img: "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", bestSeller: true },
+    { name: "Mexican Wrap", desc: "Spicy beans, veggies, and cheese wrapped in a soft tortilla.", price: "₹250", img: "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
+    { name: "Sweet Corn Soup", desc: "Comforting and thick soup made with fresh sweet corn.", price: "₹150", img: "https://images.unsplash.com/photo-1547592180-85f173990554?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
+    { name: "Virgin Mojito", desc: "Refreshing mocktail with mint and lime.", price: "₹180", img: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", bestSeller: true },
   ];
 
   const extraItems = [
-    { name: "Arrabiata Pasta", desc: "Penne pasta tossed in a spicy, garlicky tomato sauce.", price: "₹150", img: "https://images.unsplash.com/photo-1621996316585-f5e9da8ce75b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
-    { name: "Margherita Pizza", desc: "Classic pizza with fresh tomato sauce, mozzarella, and basil.", price: "₹150", img: "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
-    { name: "Spicy Paneer Wrap", desc: "Flavorful paneer chunks wrapped in a soft tortilla with spicy sauce.", price: "₹220", img: "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
-    { name: "Lasagna", desc: "Layers of pasta, rich sauce, and cheese baked to perfection.", price: "₹350", img: "https://images.unsplash.com/photo-1619881589316-56c7f9e6b587?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
-    { name: "American Dry Fruit Ice Cream", desc: "Rich and creamy ice cream loaded with premium nuts and dry fruits.", price: "₹70", img: "https://images.unsplash.com/photo-1563805042-7684c8a9e9ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
-    { name: "Chocolate Lava Cake", desc: "Warm, gooey chocolate cake with a molten center.", price: "₹220", img: "https://images.unsplash.com/photo-1624353365286-3f8d62daad51?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", bestSeller: true },
+    { name: "Thai Coconut Soup", desc: "Rich and creamy coconut soup with exotic Thai herbs.", price: "₹180", img: "https://images.unsplash.com/photo-1548943487-a2e4b43b485d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
+    { name: "Cold Coffee", desc: "Thick, creamy, and chilled coffee blended to perfection.", price: "₹150", img: "https://images.unsplash.com/photo-1461023058943-07cb12ee4df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
+    { name: "Arrabiata Pasta", desc: "Penne pasta tossed in a spicy, garlicky tomato sauce.", price: "₹220", img: "https://images.unsplash.com/photo-1621996316585-f5e9da8ce75b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
+    { name: "Chocolate Brownie", desc: "Warm gooey chocolate brownie served with vanilla ice cream.", price: "₹190", img: "https://images.unsplash.com/photo-1624353365286-3f8d62daad51?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
+    { name: "Loaded Nachos", desc: "Crispy nachos topped with melted cheese and jalapeños.", price: "₹200", img: "https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
+    { name: "Paneer Sizzler", desc: "Hot sizzling platter loaded with paneer, veggies, and rice.", price: "₹450", img: "https://images.unsplash.com/photo-1596450514735-111a2f643033?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", bestSeller: true },
   ];
 
   const displayedItems = showAll ? [...menuItems, ...extraItems] : menuItems;
