@@ -6,16 +6,16 @@ import { FaInstagram as InstaIcon } from 'react-icons/fa';
 const Instagram = () => {
   const posts = [
     { img: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", likes: "1.2k", comments: "45" },
-    { img: "https://images.unsplash.com/photo-1495474472201-4a338c20202d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", likes: "890", comments: "32" },
+    { img: "https://images.unsplash.com/photo-1442512595331-e89e73853f31?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", likes: "890", comments: "32" },
     { img: "https://images.unsplash.com/photo-1442512595331-e89e73853f31?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", likes: "2.1k", comments: "108" },
-    { img: "https://images.unsplash.com/photo-1507133750070-4ed25c7e1db0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", likes: "1.5k", comments: "67" },
+    { img: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", likes: "1.5k", comments: "67" },
   ];
 
   return (
     <section id="instagram" className="py-24 bg-dark-900 border-t border-white/5 relative">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
@@ -25,7 +25,7 @@ const Instagram = () => {
               <InstaIcon size={24} />
             </div>
           </motion.div>
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -33,7 +33,7 @@ const Instagram = () => {
           >
             Follow Our <span className="text-gradient">Journey</span>
           </motion.h2>
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -54,9 +54,9 @@ const Instagram = () => {
               transition={{ delay: index * 0.1, duration: 0.5 }}
               className="relative aspect-square overflow-hidden rounded-2xl group cursor-pointer"
             >
-              <img 
-                src={post.img} 
-                alt="Instagram post" 
+              <img
+                src={post.img}
+                alt="Instagram post"
                 className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-6">
@@ -73,7 +73,7 @@ const Instagram = () => {
           ))}
         </div>
 
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}

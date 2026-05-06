@@ -6,18 +6,21 @@ const Menu = () => {
   const [showAll, setShowAll] = useState(false);
 
   const menuItems = [
-    { name: "Cappuccino", desc: "Espresso with steamed milk and a deep layer of foam.", price: "₹180", img: "https://images.unsplash.com/photo-1572442388796-11668a67e53d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", bestSeller: true },
-    { name: "Masala Tea", desc: "Authentic Indian spiced tea brewed to perfection.", price: "₹90", img: "https://images.unsplash.com/photo-1561336313-0bd5e0b27ec8?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
-    { name: "Gourmet Burger", desc: "Juicy patty with fresh veggies and signature sauce.", price: "₹250", img: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", bestSeller: true },
-    { name: "Blue Lagoon", desc: "Refreshing mocktail with a hint of citrus and mint.", price: "₹150", img: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
-    { name: "Cheese Pizza", desc: "Classic mozzarella cheese and tangy tomato sauce.", price: "₹350", img: "https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
-    { name: "Chocolate Lava Cake", desc: "Warm gooey chocolate center served with vanilla ice cream.", price: "₹220", img: "https://images.unsplash.com/photo-1624353365286-3f8d62daad51?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", bestSeller: true },
+    { name: "Samosa Chat", desc: "Crispy samosas crushed and topped with chutneys and spices.", price: "₹100", img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", bestSeller: true },
+    { name: "Cheese Loaded French Fries", desc: "Crispy fries smothered in melted cheese and herbs.", price: "₹150", img: "https://images.unsplash.com/photo-1576107232684-1279f390859f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", bestSeller: true },
+    { name: "Supreme Cheese Burger", desc: "Our signature burger loaded with a premium patty and double cheese.", price: "₹170", img: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", bestSeller: true },
+    { name: "Club Sandwich", desc: "Triple layered sandwich packed with veggies and creamy mayo.", price: "₹200", img: "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
+    { name: "Paneer Tandoori Toast", desc: "Spiced tandoori paneer chunks on crispy toasted bread.", price: "₹180", img: "https://images.unsplash.com/photo-1525351484163-7529414344d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
+    { name: "Cheese Loaded Maggi", desc: "Everyone's favorite noodles with an overload of gooey cheese.", price: "₹120", img: "https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", bestSeller: true },
   ];
 
   const extraItems = [
-    { name: "Classic Latte", desc: "Rich espresso combined with milk and a light layer of foam.", price: "₹160", img: "https://images.unsplash.com/photo-1551030173-122aabc4489c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
-    { name: "Green Tea", desc: "Healthy and refreshing antioxidant-rich tea.", price: "₹80", img: "https://images.unsplash.com/photo-1627492221081-3006a2b8eec1?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
-    { name: "Cheesecake", desc: "Classic New York style creamy cheesecake.", price: "₹200", img: "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
+    { name: "Arrabiata Pasta", desc: "Penne pasta tossed in a spicy, garlicky tomato sauce.", price: "₹150", img: "https://images.unsplash.com/photo-1621996316585-f5e9da8ce75b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
+    { name: "Margherita Pizza", desc: "Classic pizza with fresh tomato sauce, mozzarella, and basil.", price: "₹150", img: "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
+    { name: "Spicy Paneer Wrap", desc: "Flavorful paneer chunks wrapped in a soft tortilla with spicy sauce.", price: "₹220", img: "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
+    { name: "Lasagna", desc: "Layers of pasta, rich sauce, and cheese baked to perfection.", price: "₹350", img: "https://images.unsplash.com/photo-1619881589316-56c7f9e6b587?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
+    { name: "American Dry Fruit Ice Cream", desc: "Rich and creamy ice cream loaded with premium nuts and dry fruits.", price: "₹70", img: "https://images.unsplash.com/photo-1563805042-7684c8a9e9ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
+    { name: "Chocolate Lava Cake", desc: "Warm, gooey chocolate cake with a molten center.", price: "₹220", img: "https://images.unsplash.com/photo-1624353365286-3f8d62daad51?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", bestSeller: true },
   ];
 
   const displayedItems = showAll ? [...menuItems, ...extraItems] : menuItems;
