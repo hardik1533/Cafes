@@ -4,9 +4,9 @@ import { Star, Quote, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const Reviews = () => {
   const reviews = [
-    { name: "Ananya Patel", role: "Local Guide", text: "Amazing rooftop vibe and live music! The Cheese Balls are a must-try. Perfect place for evening hangouts in Chandkheda.", rating: 5 },
-    { name: "Rohan Shah", role: "Event Organizer", text: "Hosted my birthday party here and the decor was beautiful. The pure veg multi-cuisine menu is fantastic.", rating: 5 },
-    { name: "Priya Desai", role: "Food Blogger", text: "Best rooftop cafe in Ahmedabad! The Margherita pizza and cold coffee were delicious. Highly recommend.", rating: 5 },
+    { name: "Ananya Patel", role: "Local Guide", text: "The jailhouse theme is so unique! Loved the cell booths. The Ristretto Baked Lasagna was perfectly cooked. Great spot in Navrangpura.", rating: 5 },
+    { name: "Rohan Shah", role: "Food Enthusiast", text: "Friday live music here is a vibe. The Masala Maska Cheese Fries and Blueberry Mojito are my absolute favorites.", rating: 5 },
+    { name: "Priya Desai", role: "Food Blogger", text: "Amazing food and creative ambiance. Even though it's prison-themed, the atmosphere is incredibly warm and welcoming.", rating: 5 },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

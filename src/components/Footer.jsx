@@ -12,10 +12,10 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <a href="#home" className="flex items-center gap-2 text-2xl font-serif font-bold text-white mb-6">
               <Coffee className="text-coffee-500" />
-              <span>Venus Rooftop</span>
+              <span>Ristretto</span>
             </a>
             <p className="text-gray-400 font-sans mb-6">
-              Venus Rooftop Restro & Cafe is your ultimate destination for pure veg multi-cuisine dining, live music, and unforgettable rooftop vibes in Ahmedabad.
+              Ristretto – Behind The Rods is Ahmedabad's unique jailhouse-themed cafe offering inventive global vegetarian cuisine and an immersive dining experience.
             </p>
             <div className="flex items-center gap-4">
               <a href="#" className="w-10 h-10 rounded-full glass flex items-center justify-center text-white hover:bg-coffee-500 hover:text-white transition-all duration-300">
@@ -77,7 +77,7 @@ const Footer = () => {
         </div>
 
         <div className="text-center pt-8 border-t border-white/10 text-gray-500 font-sans text-sm">
-          <p>&copy; {new Date().getFullYear()} Venus Rooftop Restro & Cafe. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Ristretto - Behind The Rods. All rights reserved.</p>
         </div>
       </div>
     </footer>

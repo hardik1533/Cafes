@@ -6,21 +6,21 @@ const Menu = () => {
   const [showAll, setShowAll] = useState(false);
 
   const menuItems = [
-    { name: "Cheese Balls", desc: "Crispy golden fried cheese balls served with dip.", price: "₹220", img: "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", bestSeller: true },
-    { name: "Margherita Pizza", desc: "Classic pizza with fresh tomato sauce, mozzarella, and basil.", price: "₹300", img: "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", bestSeller: true },
-    { name: "Paneer Tikka", desc: "Soft paneer cubes marinated in spices and grilled in tandoor.", price: "₹280", img: "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", bestSeller: true },
-    { name: "Mexican Wrap", desc: "Spicy beans, veggies, and cheese wrapped in a soft tortilla.", price: "₹250", img: "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
-    { name: "Sweet Corn Soup", desc: "Comforting and thick soup made with fresh sweet corn.", price: "₹150", img: "https://images.unsplash.com/photo-1547592180-85f173990554?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
-    { name: "Virgin Mojito", desc: "Refreshing mocktail with mint and lime.", price: "₹180", img: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", bestSeller: true },
+    { name: "Ristretto Baked Lasagna", desc: "Layers of pasta with rich sauce, veggies, and baked cheese.", price: "₹350", img: "https://images.unsplash.com/photo-1619881589316-56c7f9e6b587?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", bestSeller: true },
+    { name: "Masala Maska Cheese Fries", desc: "Crispy fries loaded with cheese and our special masala blend.", price: "₹160", img: "https://images.unsplash.com/photo-1576107232684-1279f390859f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", bestSeller: true },
+    { name: "Pesto Spaghetti", desc: "Classic spaghetti tossed in our creamy homemade basil pesto.", price: "₹280", img: "https://images.unsplash.com/photo-1621996316585-f5e9da8ce75b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", bestSeller: true },
+    { name: "Mexican Hot Pot", desc: "A spicy and hearty bowl of rice, beans, veggies, and salsa.", price: "₹320", img: "https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
+    { name: "Signature Ristretto Coffee", desc: "Our namesake rich, dark, and strong espresso shot.", price: "₹180", img: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", bestSeller: true },
+    { name: "Blueberry Mojito", desc: "Refreshing mocktail with crushed blueberries, mint, and lime.", price: "₹190", img: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
   ];
 
   const extraItems = [
-    { name: "Thai Coconut Soup", desc: "Rich and creamy coconut soup with exotic Thai herbs.", price: "₹180", img: "https://images.unsplash.com/photo-1548943487-a2e4b43b485d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
-    { name: "Cold Coffee", desc: "Thick, creamy, and chilled coffee blended to perfection.", price: "₹150", img: "https://images.unsplash.com/photo-1461023058943-07cb12ee4df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
-    { name: "Arrabiata Pasta", desc: "Penne pasta tossed in a spicy, garlicky tomato sauce.", price: "₹220", img: "https://images.unsplash.com/photo-1621996316585-f5e9da8ce75b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
-    { name: "Chocolate Brownie", desc: "Warm gooey chocolate brownie served with vanilla ice cream.", price: "₹190", img: "https://images.unsplash.com/photo-1624353365286-3f8d62daad51?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
-    { name: "Loaded Nachos", desc: "Crispy nachos topped with melted cheese and jalapeños.", price: "₹200", img: "https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
-    { name: "Paneer Sizzler", desc: "Hot sizzling platter loaded with paneer, veggies, and rice.", price: "₹450", img: "https://images.unsplash.com/photo-1596450514735-111a2f643033?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", bestSeller: true },
+    { name: "Lebanese Mezze Platter", desc: "Hummus, pita, falafel, and fresh salad.", price: "₹350", img: "https://images.unsplash.com/photo-1548943487-a2e4b43b485d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
+    { name: "Sizzling Brownie", desc: "Warm brownie topped with ice cream on a hot sizzler plate.", price: "₹220", img: "https://images.unsplash.com/photo-1624353365286-3f8d62daad51?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
+    { name: "Paneer Tikka Pizza", desc: "Desi twist to pizza with spicy paneer tikka topping.", price: "₹300", img: "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
+    { name: "Creamy Mushroom Risotto", desc: "Rich and creamy Italian rice dish with fresh mushrooms.", price: "₹320", img: "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
+    { name: "Sonu Monu Fritters", desc: "Our special crispy golden fried potato and cheese fritters.", price: "₹150", img: "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
+    { name: "Thick Chocolate Milkshake", desc: "Indulgent, thick chocolate shake topped with whipped cream.", price: "₹200", img: "https://images.unsplash.com/photo-1572442388796-11668a67e53d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", bestSeller: true },
   ];
 
   const displayedItems = showAll ? [...menuItems, ...extraItems] : menuItems;

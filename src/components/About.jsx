@@ -1,13 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Star, Music, Award, Gift } from 'lucide-react';
+import { Sofa, Music, Utensils, Coffee } from 'lucide-react';
 
 const About = () => {
   const highlights = [
-    { icon: <Star size={24} />, title: "Rooftop Vibe", desc: "Scenic views & open-air dining." },
-    { icon: <Music size={24} />, title: "Live Music", desc: "Enjoy soulful tunes under the stars." },
-    { icon: <Award size={24} />, title: "Pure Veg", desc: "Multi-cuisine delights & mocktails." },
-    { icon: <Gift size={24} />, title: "Event Hosting", desc: "Perfect for birthdays & celebrations." },
+    { icon: <Sofa size={24} />, title: "Jail Theme", desc: "Unique mock-prison booths & bars." },
+    { icon: <Music size={24} />, title: "Live Music", desc: "Friday music nights & sports." },
+    { icon: <Utensils size={24} />, title: "Global Menu", desc: "Vegetarian Continental & more." },
+    { icon: <Coffee size={24} />, title: "Signature Coffee", desc: "Crafted blends & mocktails." },
   ];
 
   return (
@@ -25,8 +25,8 @@ const About = () => {
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl z-10">
               <img 
-                src="https://images.unsplash.com/photo-1525610553991-2bede1a236e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-                alt="Rooftop Dining" 
+                src="https://images.unsplash.com/photo-1544148103-0773bf10d330?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                alt="Cafe Interior" 
                 className="w-full h-64 sm:h-80 lg:h-[500px] object-cover hover:scale-105 transition-transform duration-700"
               />
             </div>
@@ -51,10 +51,10 @@ const About = () => {
           >
             <h4 className="text-coffee-500 font-poppins font-medium tracking-wider mb-2 uppercase text-sm">Our Story</h4>
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
-              Ahmedabad's Best <span className="text-gradient">Rooftop Cafe</span>
+              Dining <span className="text-gradient">With a Twist</span>
             </h2>
             <p className="text-gray-400 mb-6 font-sans text-lg leading-relaxed">
-              Venus Rooftop Restro & Cafe is a popular dining destination in Chandkheda, known for its relaxed open-air ambiance and versatile menu. Offering scenic views of the northern Ahmedabad skyline paired with a calm, breezy environment, it is the ideal spot for casual gatherings or special celebrations.
+              Ristretto – Behind The Rods is Ahmedabad's most creative dining spot, located in Navrangpura. Designed around a playful jailhouse motif, our cafe transforms traditional dining into an immersive experience complete with cell-inspired booths and dim lighting. Whether you're here for our inventive global vegetarian cuisine, live music on Fridays, or simply to hang out in a relaxed social atmosphere, every moment behind the rods is unforgettable.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">

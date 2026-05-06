@@ -4,14 +4,14 @@ import { Wifi, Tv, Coffee, Clock, Users, Zap, Sofa, Music } from 'lucide-react';
 
 const Features = () => {
   const features = [
-    { icon: <Coffee size={32} />, title: "Premium Menu", desc: "Multi-cuisine vegetarian delights." },
-    { icon: <Sofa size={32} />, title: "Open-Air Ambiance", desc: "Warm lighting and expansive terrace." },
-    { icon: <Music size={32} />, title: "Live Music", desc: "Soulful performances on the rooftop." },
-    { icon: <Wifi size={32} />, title: "Free WiFi", desc: "Stay connected while you dine." },
-    { icon: <Tv size={32} />, title: "Live Sports", desc: "Catch the latest matches live on screen." },
-    { icon: <Clock size={32} />, title: "Evening Vibe", desc: "Perfect sunset and late-night ambiance." },
-    { icon: <Users size={32} />, title: "Family Friendly", desc: "A welcoming atmosphere for everyone." },
-    { icon: <Zap size={32} />, title: "Event Hosting", desc: "Customizable décor for private parties." },
+    { icon: <Sofa size={32} />, title: "Jail Theme", desc: "Unique cell-inspired booths & decor." },
+    { icon: <Music size={32} />, title: "Live Music", desc: "Lively acoustic nights on Fridays." },
+    { icon: <Coffee size={32} />, title: "Global Menu", desc: "Multi-cuisine vegetarian delights." },
+    { icon: <Zap size={32} />, title: "Signature Coffee", desc: "Best Ristretto blends & mocktails." },
+    { icon: <Tv size={32} />, title: "Live Sports", desc: "Watch the latest matches live." },
+    { icon: <Users size={32} />, title: "Social Vibe", desc: "Perfect for friendly hangouts & dates." },
+    { icon: <Clock size={32} />, title: "Late Night", desc: "Warm and cozy evening ambiance." },
+    { icon: <Wifi size={32} />, title: "Free WiFi", desc: "Stay connected behind the rods." },
   ];
 
   const containerVariants = {

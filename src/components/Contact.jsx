@@ -4,10 +4,10 @@ import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 
 const Contact = () => {
   const contactInfo = [
-    { icon: <MapPin size={24} />, title: "Location", detail: "Terrace @ The Emporio, above Croma, opp. PVR 4D Square Mall, Chandkheda, Ahmedabad, Gujarat 382424" },
-    { icon: <Phone size={24} />, title: "Phone", detail: "+91 90995 99585" },
-    { icon: <Mail size={24} />, title: "Email", detail: "hello@venusrooftop.com" },
-    { icon: <Clock size={24} />, title: "Opening Hours", detail: "Mon-Sun: 5:00 PM - 12:00 AM" },
+    { icon: <MapPin size={24} />, title: "Location", detail: "A-1, Maharaja Palace, Near Vijay Cross Rd, opp. Gujarat Univ Plaza, Navrangpura, Ahmedabad 380009" },
+    { icon: <Phone size={24} />, title: "Phone", detail: "+91 81401 83183" },
+    { icon: <Mail size={24} />, title: "Email", detail: "hello@ristretto.in" },
+    { icon: <Clock size={24} />, title: "Opening Hours", detail: "Mon-Sun: 11:00 AM - 11:30 PM" },
   ];
 
   return (
@@ -57,7 +57,7 @@ const Contact = () => {
             className="w-full lg:w-2/3 h-80 sm:h-[400px] lg:h-[500px] rounded-3xl overflow-hidden glass p-2"
           >
             <iframe 
-              src="https://maps.google.com/maps?q=Venus%20Rooftop%20Restro%20%26%20Cafe,%20Ahmedabad&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+              src="https://maps.google.com/maps?q=Ristretto%20Behind%20The%20Rods,%20Ahmedabad&t=&z=15&ie=UTF8&iwloc=&output=embed" 
               width="100%" 
               height="100%" 
               style={{ border: 0, borderRadius: '1.5rem', filter: 'grayscale(1) invert(0.9) contrast(1.2)' }} 

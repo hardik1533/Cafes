@@ -8,8 +8,8 @@ const Hero = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" 
-          alt="Rooftop Cafe" 
+          src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" 
+          alt="Cafe Interior" 
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-dark-900/80 via-dark-900/60 to-dark-900"></div>
@@ -22,13 +22,13 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <span className="text-coffee-400 font-poppins tracking-[0.2em] uppercase text-sm font-semibold mb-4 block">
-            Welcome to Venus
+            Welcome to Ristretto
           </span>
           <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-white mb-6 leading-tight">
-            Sky-High <span className="text-gradient">Dining.</span>
+            Behind The <span className="text-gradient">Rods.</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-300 font-sans max-w-2xl mx-auto mb-10">
-            Experience open-air ambiance, multi-cuisine delights, and unforgettable moments at Venus Rooftop Restro & Cafe.
+            Experience Ahmedabad's unique jailhouse-themed cafe with inventive global cuisine, live entertainment, and unforgettable ambiance.
           </p>
         </motion.div>
 

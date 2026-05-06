@@ -28,7 +28,7 @@ const Navbar = () => {
       <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
         <a href="#home" className="flex items-center gap-2 text-2xl sm:text-3xl font-serif font-bold text-white group">
           <Coffee className="text-coffee-500 group-hover:rotate-12 transition-transform duration-300" />
-          <span>Venus Rooftop</span>
+          <span>Ristretto</span>
         </a>
 
         {/* Desktop Nav */}
