@@ -15,8 +15,8 @@ const Gallery = () => {
   return (
     <section id="gallery" className="py-24 bg-dark-800 relative">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
-          <div>
+        <div className="flex flex-col md:flex-row justify-between items-center md:items-end mb-12 gap-6">
+          <div className="text-center md:text-left">
             <motion.h4 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
