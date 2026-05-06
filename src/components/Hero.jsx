@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section id="home" className="relative h-screen w-full flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-[100dvh] w-full flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
@@ -15,7 +15,7 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-dark-900/80 via-dark-900/60 to-dark-900"></div>
       </div>
 
-      <div className="container mx-auto px-6 relative z-10 flex flex-col items-center text-center mt-20">
+      <div className="container mx-auto px-6 relative z-10 flex flex-col items-center text-center pt-24 pb-32">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}

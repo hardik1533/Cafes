@@ -85,7 +85,7 @@ function App() {
   }
 
   return (
-    <div className="bg-dark-900 min-h-screen text-white relative">
+    <div className="bg-dark-900 min-h-screen text-white relative overflow-x-hidden">
       <ScrollProgress />
       <CursorGlow />
       <Navbar />
